@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 # Naming
-PS1='\e[0;36m\W \e[0;35m\$ \e[m'
+PS1='\[\e[0;36m\]\W \[\e[0;35m\]\$ \[\e[m\]'
 
 # Aliases
 alias please='sudo'
