@@ -73,49 +73,11 @@ key_bindings:
   # (Windows, Linux, and BSD only)
   - { key: V, mods: Control, action: Paste }
   - { key: C, mods: Control, action: Copy }
-  - { key: Insert, mods: Shift, action: PasteSelection }
+  - { key: C, mods: Control|Shift, chars: "\x03"}
   - { key: Key0, mods: Control|Alt, action: ResetFontSize }
-  - {
-      key: Equals,
-      mods: Control|Alt,
-      action: IncreaseFontSize
-    }
+  - { key: Equals, mods: Control|Alt, action: IncreaseFontSize}
   - { key: Plus, mods: Control|Alt, action: IncreaseFontSize }
-  - {
-      key: Minus,
-      mods: Control|Alt,
-      action: DecreaseFontSize
-    }
-  - { key: F11, mods: None, action: ToggleFullscreen }
-  - { key: Paste, mods: None, action: Paste }
-  - { key: Copy, mods: None, action: Copy }
-  - { key: L, mods: Control, action: ClearLogNotice }
-  - { key: L, mods: Control, chars: "\f" }
-  - {
-      key: PageUp,
-      mods: None,
-      action: ScrollPageUp,
-      mode: ~Alt
-    }
-  - {
-      key: PageDown,
-      mods: None,
-      action: ScrollPageDown,
-      mode: ~Alt
-    }
-  - {
-      key: Home,
-      mods: Shift,
-      action: ScrollToTop,
-      mode: ~Alt
-    }
-  - {
-      key: End,
-      mods: Shift,
-      action: ScrollToBottom,
-      mode: ~Alt
-    }
-
+  - { key: Minus,mods: Control|Alt,action: DecreaseFontSize}
 
 theme: Dracula
 title: Alacritty
